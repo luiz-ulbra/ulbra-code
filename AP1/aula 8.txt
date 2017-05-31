@@ -1,0 +1,99 @@
+1.
+algoritmo "entre100"
+var
+n1:real
+inicio 
+escreva("escreva o numero:")
+leia(n1)
+se (n1>100) e (n1<1000)entao
+escreva(" o valor esta entre 100 e 1000:",n1)
+fimse
+fimalgoritmo
+
+ 2)
+ algoritmo "reajuste"
+ var
+ salario,tec,ger,outros:real
+ escreva("digite o primeiro cargo:")
+ leia(tec)
+ escreva("digite o segundo cargo:")
+ leia(ger)
+ escreva("digite o terceiro cargo:")
+ leia(outros)
+ se (tec+)*0.50 entao
+ escreva("o salario reajustado é:",tec)
+ se (ger+)*0.30 entao
+ escreva("o salario reajustadoé:",ger)
+ se (outros)*0.20 entao
+ escreva("o salario reajustado é:",outros)
+ fimse
+ fimse
+ fimse
+ fimalgoritmo
+ 
+ 3)algoritmo "numero"
+ var
+ num:real
+ inicio
+ escreva("digite o numero:")
+ leia(num)
+ se (num>30)
+ num:= (num)/2 entao
+ escreva(" o resultado pela metade é",num)
+fimse
+fimalgoritmo 
+ 
+ 
+ var
+ n1,n2,n3:real
+ inicio
+ escreva("digite o primeiro numero")
+ leia(n1)
+ escreva("digite o segundo numero")
+ leia(n2)
+ escreva(digite o terceiro numero")
+ leia(n3)
+ 
+ 5,
+ algoritmo"seila"
+ var
+ n1,n2,resultado,soma:real
+ inicio
+ escreva("digite o primeiro numero:")
+ leia(n1)
+ escreva("digite o segundo numero":)
+ leia(n2)
+soma:= (n1+n2)
+se (n1+n2)>20 entao
+resultado :=n1+n2+8
+se
+resultado:= n1+n2-5 entao
+escreva("o resultado é")
+fimse
+fimse
+fimalgoritmo
+ 
+6, algoritmo"gaucho"
+ var
+estado:caracter
+inicio
+escreva("escreva "R" se seu estado for rio grande do sul, escreva "S" se seu estado for Santa catarina,  escreva "p" se for Parana, escreva
+se (estado=g) entao
+escreva("gaucho)"
+se(estado=s)entao
+escreva("catarinese")
+se(estado=p)entao
+escreva("paranaense")
+fimse
+fimse
+fimse
+fimalgoritmo
+
+9- algoritmo"compras"
+var
+md,quantidade:real
+inicio
+escreva("quantas maças?")
+leia(quantidade)
+se(quantidade=>12)entao
+md

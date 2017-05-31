@@ -1,0 +1,39 @@
+1)
+algoritmo" indefint"
+var
+	numero,cont,soma,maior,menor:inteiro
+inicio
+	
+	cont=0
+	menor=100
+	maior=0
+	soma=0 
+	repita
+repita
+	escreva( digite o numero:")
+	leia(num
+	se (soma<>100) ou (num<>0) ou (cont<13)
+	
+	
+	soma=soma+num
+	cont=cont+1
+se	num>maior entao
+	maior-num
+	ate que (soma=100) ou (num=0) ou (cont=13)
+fimse
+se num<menor 
+
+3)
+algoritmo"numeros"
+var
+num1,num2,soma:real
+inicio
+escreval("digite o primeiro numero:")
+leia(num1)
+escreval("digite o segundo numero:")
+leia(num2)
+soma:= num1>0
+soma:= num<10
+soma:= num1+num2
+escreva(" a soma dos numeros é:",soma)
+fimalgoritmo
