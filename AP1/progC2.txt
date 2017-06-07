@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <conio.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+main ( )
+{ 
+	float n1,n2,media;
+printf("nota 1: ");
+scanf("%f",&n1);
+printf("\n nota 2: ");
+scanf("%f" ,&n2);
+media=(n1+n2*2)/3;
+printf("\n media :%.2f",media);
+getch() ;
+ 
+}
