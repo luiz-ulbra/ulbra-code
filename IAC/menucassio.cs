@@ -1,10 +1,10 @@
 ﻿using System;
 
 class IAC_CS_Codes{
-    public static int Tela_Menu(){ // EXIBIR O MENU PRINCIPAL DO PROGRAMA
+    public static int Tela_Menu(){ 
         int ler;
         limpar();
-        escreva("IAC C# CODES");
+        escreva("menu");
         escreva("[1] TABUADA");
         escreva("[2] MEDIA - ULBRA");
         escreva("[3] CALCULADORA");
@@ -15,42 +15,40 @@ class IAC_CS_Codes{
     }
 
     public static void Funcoes(int Comando){
-        // CHAMADOR DE FUNÇÕES <-
+        
         switch (Comando){
-            case 1: // Chama Tabuada
+            case 1: 
                 Tabuada();
                 break;
-            case 2: // Chama média da Ulbra
+            case 2: 
                 MediaUlbra();
                 break;
-            case 3: // Chama Calculadora
+            case 3:  
                 Calculadora();
                 break;
-            case 4: // Chama IMC
+            case 4:  
                 IMC();
                 break;
         }
     }
 
     public static void Main(){
-        // COMANDO MAIN - INICIALIZANDO O PROGRAMA
-
-        // incializando variáveis
+       
         int Comando;
 
-        // Executando...
+        
         do{
-            Comando = Tela_Menu(); // Chama o Menu
+            Comando = Tela_Menu(); 
 
             if(Comando != 5 && Comando >= 1 && Comando <= 4){
-                Funcoes(Comando); // Chama as funcoes
+                Funcoes(Comando); 
             }
 
         } while(Comando != 5);
     }
 
-    // FUNÇÕES
-    public static void Tabuada(){ // Mostra a tabuada de um numero desejado
+    
+    public static void Tabuada(){ 
         int numero;
         string Comando = "";
 
@@ -63,7 +61,7 @@ class IAC_CS_Codes{
             escreva("TABELA DO [" + numero + "]");
 
             for (int i = 0; i <= 10; i++){
-                escreva(numero + " x " + i + " = " + numero*i); // Executa a conta - E mostra na tela a tabuada
+                escreva(numero + " x " + i + " = " + numero*i); 
             }
 
             escreva("");
@@ -74,7 +72,7 @@ class IAC_CS_Codes{
         } while(Comando != "voltar");
     }
 
-    public static void MediaUlbra(){ // Calcula a Média da Ulbra
+    public static void MediaUlbra(){
         float G1, G2, Media;
         string Voltar;
 
@@ -102,8 +100,8 @@ class IAC_CS_Codes{
         } while(Voltar != "voltar");
     }
 
-    public static void Calculadora(){ // Realiza as operações básicas da matemática
-        // Declaração das Variáveis
+    public static void Calculadora(){ 
+
         int Comando = 0;
 
         float N1 = 0;
@@ -113,7 +111,7 @@ class IAC_CS_Codes{
         string Oper = "";
         string Voltar = "";
 
-        // Executando...
+       
         do{
             limpar();
 
@@ -165,22 +163,22 @@ class IAC_CS_Codes{
         } while(Voltar != "voltar");
     }
 
-    public static void IMC(){ // Realiza os cálculos de índice de massa corporal
+    public static void IMC(){
         float Peso, Altura, IMC;
         string Sexo, Voltar;
 
         do{
             limpar();
-            escreva("Digite seu peso: (kg) - ex(60,00)");
+            escreva("Digite seu peso: ");
             Peso = float.Parse(leia());
 
-            escreva("Digite sua altura: (m) - ex(1,60)");
+            escreva("Digite sua altura: ");
             Altura = float.Parse(leia());
 
             escreva("Digite seu sexo: [M] ou [F]");
             Sexo = leia();
 
-            //peso em kg / (altura em metros * altura em metros)
+        
             IMC = (Peso / (Altura * Altura));
 
             escreva("Seu IMC -> " + IMC);
@@ -203,7 +201,7 @@ class IAC_CS_Codes{
                 } else if(IMC < 25.8){
                     escreva("Peso normal!");
                 } else if(IMC < 27.3){
-                    escreva("Marginalmente acima do peso!");
+                    escreva(" acima do peso!");
                 } else if(IMC < 32.3){
                     escreva("Acima do Peso ideal!");
                 } else{
@@ -219,21 +217,21 @@ class IAC_CS_Codes{
 
 
 
-    // Funções Rápidas
 
-    static void escreva(string palavra){ // Escreve na tela -- ex escreva("oi");
+
+    static void escreva(string palavra){ 
         Console.WriteLine(palavra);
     }
 
-    static string leia(){ // Lê o parametro -- ex comando = leia();
+    static string leia(){ 
         return Console.ReadLine();
     }
 
-    static void parar(){ // Para o programa -- ex parar();
+    static void parar(){ 
         Console.ReadLine();
     }
 
-    static void limpar(){ // Limpa a tela -- ex limpar();
+    static void limpar(){
         Console.Clear();
     }
 }
