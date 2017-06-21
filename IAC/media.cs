@@ -21,7 +21,7 @@ class media
 			Console.WriteLine(" VOCE ESTA ACIMA DA MEDIA!");
 		}	
 			else
-			Console.WriteLine(\n " VOCE NAO ESTA ACIMA DA MEDIA!");
+			Console.WriteLine(" VOCE NAO ESTA ACIMA DA MEDIA!");
 		
 		Console.ReadLine();
 	}
